@@ -1,0 +1,134 @@
+/*CSS DOCUMENT*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
+
+img {
+    width: 100%; 
+    display:block;
+}
+    
+
+body {
+    margin-bottom: 3rem;
+    padding: 1rem;
+    background-color: rgb(255,254,251);
+    color: rgb(45,49,17);
+    line-height: 180%;
+    font-family: roboto, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+section.jewelry el li img {
+    width: 50%;
+}
+
+div.container {
+    max-width: 50em;
+    margin:  auto;
+}
+
+li   {
+    list-style-type: none;
+    display: inline;
+    font-style: bold;
+     margin: 1rem 0rem 1rem;
+    text-transform: inherit;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: rgb(163,133,119);
+    letter-spacing: .1em;
+    font-weight: 200;
+    font-style: normal;
+    padding: 0rem;
+}
+
+
+nav ul li a{
+    margin-right: 1rem;
+    text-decoration: none;
+    color: rgb(152,117,114);
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    color: rgb(blanchedalmond);
+    display: inline;
+    margin right: 2em;
+}
+
+@media only screen and (min-width: 60em) {
+
+
+div.container {
+    max-width: 40em;
+    margin:  auto;
+}
+
+
+h1   {
+    margin: 0rem 0rem 0rem;
+    text-transform: uppercase;
+    color: rgb(163,133,119);
+    letter-spacing: 0em;
+}
+
+h2   {
+    margin: 2rem 0rem 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: rgb(163,133,119);
+    letter-spacing: .1em;
+    font-family: roboto, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+    p {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+section.jewelry ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2em;
+    grid-row-gap: 2em;
+    /*grid-template-rows: 2em auto;*/
+}
+/*NAV STYLING*/
+ul {
+    list-style-type: none;
+     font-weight: 100;
+    font-size: .9em;
+    font-style: normal;
+    padding-left: 0em;
+}
+
+nav ul {
+padding:0;
+text-align: left;
+margin-bottom: 1rem;
+margin-left: 0em;
+font-size: 1rem;
+}
+
+nav ul li {
+display: inline;
+list-style-type: none;
+margin-left: 0;
+text-align: left;
+font-size: 1em;
+text-transform: uppercase;
+letter-spacing: 0.05em;
+}
+
+/*
+figure {
+    padding-right: 4.5rem;
+}
+*/
+ }
+
+/*Please don’t change this CSS stylesheet for the content hierarchy assginment */
