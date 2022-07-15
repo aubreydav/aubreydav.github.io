@@ -98,7 +98,6 @@ footer {
 
     section.teaserMain figure div {
         flex: 1 0 18em;
-        background-image: url(Images/landscape_portrait.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
