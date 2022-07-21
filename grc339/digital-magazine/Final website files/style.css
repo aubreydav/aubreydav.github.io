@@ -1,0 +1,292 @@
+/*CSS document*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
+
+body {
+    background-color: rgb(250, 249, 246);
+        margin: 1em;
+}
+
+div.container {
+    max-width: 60em;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    display: block;
+    margin-top: .5em;
+    margin: 0em 0em 0em 0em;
+}
+
+figure {
+    margin: 0em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul{
+    border-bottom: 2px solid;
+    border-top: 2px solid; 
+    padding: 1em;
+    color:rgb(195, 172, 167);
+    text-align: center;
+}
+
+nav ul li {
+    padding: 0.5em;
+    font-family: dair, sans-serif;
+    display: inline;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-style: normal;
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(118, 106, 99);
+    text-decoration: none;
+    margin-right: .8em;
+}
+
+h1{
+    width: 80%;
+    margin right: 20em;
+    padding-right: 10em;
+}
+
+h2 {
+     color: rgb(118, 106, 99);
+    font-weight: medium;
+    font-family:inherit;
+}
+
+h3 {
+    color: rgb(118, 106, 99);
+    font-weight: 300;
+    font-family: poppin;
+    font-size: 2em;
+    padding-top: .7em;
+    text-decoration: none;
+}
+
+h3:hover {
+	text-decoration: underline;
+}
+
+nav ul li a:hover {
+    color: rgb(195, 172, 167)
+}
+
+figcaption{
+    font-family: dair, serif;
+    color: rgb(195, 172, 167);
+    font-size: 0.9em;
+}
+
+section{
+    max-width: 40em;
+    margin: 0 auto 0em;
+}
+
+section a {
+    color: rgb(76, 79, 103);
+    text-decoration: none;
+    max-width: 40
+}
+
+p {
+    font-family: sans-serif;
+    color:  rgb(114,105, 99);
+    overflow: hidden;
+    letter-spacing: .02em;
+    font-size: 1.1em;
+    line-height: 25px;
+    font-weight: 100
+    
+}
+
+.mainstory{
+    font-family: dair, serif;
+}
+
+
+.mainstory a{
+    font-family: itc-avant-garde-gothic-pro, sans-serif;
+    font-weight: 300;
+    color: rgb(150, 139, 150); 
+}
+
+.secondary a{
+    font-family: itc-avant-garde-gothic-pro, sans-serif;
+    font-weight: 300;
+    color: rgb(150, 139, 150); 
+}
+
+section.mainstory{
+   grid-column: 2/4;
+    grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+}
+
+
+section.mainstory figure {
+      flex: 1 0 18em;
+    display: flex;
+}
+
+section.mainstory h3{
+    flex: 0 0 auto;
+    margin: .3em 0em 1em 0em;
+}
+
+section.mainstory p{
+    flex: 0 0 auto;
+    margin: 0;
+}
+
+section.mainstory figure div{
+    flex: 1 0 18em;
+    background-image: url(mooncookies.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section.mainstory figure figcaption{
+    flex: 0 0 3em;
+}
+
+section.mainstory figure img{
+    height: 100%;
+}
+
+section.mainstory figure div img{
+    height:auto;
+    opacity: 0;
+}
+
+main {
+    position: inherit;
+    overflow: hidden;
+    padding-bottom: calc(65% + 3em);
+}
+
+main.photogallery figure {
+    width: calc(100%-2em);
+    position: absolute;
+    opacity: 0;
+    transition: opacity .5s;
+     
+}
+
+figcaption {
+	font-family: dair,serif;
+    font-size: 1em;
+    margin: 1em 0em;
+    color: rgb(76, 79, 103);
+}
+
+input:nth-of-type(1):checked ~ main figure:nth-of-type(1),
+input:nth-of-type(2):checked ~ main figure:nth-of-type(2),
+input:nth-of-type(3):checked ~ main figure:nth-of-type(3),
+input:nth-of-type(4):checked ~ main figure:nth-of-type(4),
+input:nth-of-type(5):checked ~ main figure:nth-of-type(5),
+input:nth-of-type(6):checked ~ main figure:nth-of-type(6),
+input:nth-of-type(7):checked ~ main figure:nth-of-type(7),
+input:nth-of-type(8):checked ~ main figure:nth-of-type(8){
+    opacity: 1;
+}
+
+nav.photogallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 1em;
+}
+
+
+input.photogallery {
+    display: none;
+}
+
+div.photogallery {
+grid-column: 1/3;
+}
+
+/*FORM*/
+
+main.form {
+	grid-column: 1/3;
+}
+
+section.personal-info ul li {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 1em;
+}
+
+section.personal-info {
+	padding: .5em 1em .5em 1em;
+	border-radius: 1em;
+}
+
+section.topics {
+	padding: .5em 0em .5em 1em;
+	border-radius: 1em;
+}
+
+section.personal-info ul li label {
+	flex: 0 0 8em;
+}
+
+section.personal-info ul li input[type="text"], section.personal-info ul li input[type="tel"], section.personal-info ul li input[type="email"], section.personal-info ul li select {
+	flex: 4 0 28em;
+}
+
+section.topics ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+section.topics ul li {
+	margin: 0 1em 0 0;
+	flex: 1 0 15em;
+}
+
+section.newsletter button{
+    margin: 0em 0em 0em 5em;
+}
+
+
+@media screen and (min-width: 60em){
+    
+    div.container {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 0 1em;
+    }
+    header{
+        grid-column: 1/3;
+    }
+    main{
+        grid-column: 1/3;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 0 1em;
+    }
+    aside{
+        grid-column: 2/3;
+    }
+    footer {
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+}
+
+
