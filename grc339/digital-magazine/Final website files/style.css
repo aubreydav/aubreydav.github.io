@@ -16,6 +16,7 @@ img {
     width: 100%;
     display: block;
     margin-top: .5em;
+    margin-bottom: .5em;
     margin: 0em 0em 0em 0em;
 }
 
@@ -78,6 +79,15 @@ h3:hover {
 	text-decoration: underline;
 }
 
+h4 {
+    color: rgb(118, 106, 99);
+    font-weight: 500;
+    font-size: 1.5em;
+    padding-top: .7em;
+    text-decoration: none;
+     font-family: sans-serif;
+}
+
 nav ul li a:hover {
     color: rgb(195, 172, 167)
 }
@@ -89,14 +99,12 @@ figcaption{
 }
 
 section{
-    max-width: 40em;
     margin: 0 auto 0em;
 }
 
 section a {
     color: rgb(76, 79, 103);
     text-decoration: none;
-    max-width: 40
 }
 
 p {
@@ -138,6 +146,7 @@ section.mainstory{
 section.mainstory figure {
       flex: 1 0 18em;
     display: flex;
+    
 }
 
 section.mainstory h3{
@@ -152,7 +161,7 @@ section.mainstory p{
 
 section.mainstory figure div{
     flex: 1 0 18em;
-    background-image: url(mooncookies.jpg);
+    background-image: url(beachdress.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -168,17 +177,18 @@ section.mainstory figure img{
 
 section.mainstory figure div img{
     height:auto;
-    opacity: 0;
+    opacity: 1;
 }
 
-main {
-    position: inherit;
+main.gallery {
+    position: relative;
     overflow: hidden;
-    padding-bottom: calc(65% + 3em);
+    padding-bottom: calc(125% + 6em);
+    grid-column: 1/3;
 }
 
-main.photogallery figure {
-    width: calc(100%-2em);
+main.gallery figure {
+    width: 100%;
     position: absolute;
     opacity: 0;
     transition: opacity .5s;
@@ -203,18 +213,18 @@ input:nth-of-type(8):checked ~ main figure:nth-of-type(8){
     opacity: 1;
 }
 
-nav.photogallery {
+nav.gallery {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-gap: 1em;
 }
 
 
-input.photogallery {
+input.gallery {
     display: none;
 }
 
-div.photogallery {
+div.gallery {
 grid-column: 1/3;
 }
 
@@ -274,7 +284,6 @@ section.newsletter button{
         grid-column: 1/3;
     }
     main{
-        grid-column: 1/3;
         display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-gap: 0 1em;
